@@ -86,11 +86,11 @@
   </div>
 
   <header>
-    <h1>The <span>backtest.</span></h1>
+    <h1>The <span>Backtest.</span></h1>
     <p class="lede">What our bots would have done over <b>the last full seasons</b> (NBA 2, NFL 3), replayed pick by pick on <b>real historical bookmaker prices</b> with the exact rules they use today. Losing months included.</p>
   </header>
 
-  <p class="warn"><b>This is a simulation, not our live record.</b> Nobody bet these picks at the time. It shows how the method holds up over thousands of bets. Our real, timestamped results are on the <a href="index.html" style="color:var(--neon)">live record</a> and are never mixed with these numbers.</p>
+  <p class="warn"><b>This Is a Simulation, Not Our Live Record.</b> Nobody bet these picks at the time. It shows how the method holds up over thousands of bets. Our real, timestamped results are on the <a href="index.html" style="color:var(--neon)">live record</a> and are never mixed with these numbers.</p>
 
   <div class="chips" id="chips" role="tablist" aria-label="Sport">
     <button class="on" data-s="nba">NBA</button><button data-s="nfl">NFL</button>
@@ -101,14 +101,14 @@
     <div class="tile"><div class="k">Bets</div><div class="v" id="t-n">–</div></div>
     <div class="tile"><div class="k">ROI</div><div class="v" id="t-roi">–</div></div>
     <div class="tile"><div class="k">Record</div><div class="v" id="t-rec">–</div></div>
-    <div class="tile"><div class="k">Beat closing line</div><div class="v" id="t-clv">–</div></div>
+    <div class="tile"><div class="k">Beat Closing Line</div><div class="v" id="t-clv">–</div></div>
   </section>
   <p class="note" id="stake-note" style="margin-top:-16px"></p>
 
   <div class="seasons" id="seasons"></div>
 
   <section class="card" id="par-card">
-    <h2>NBA value parlays</h2>
+    <h2>NBA Value Parlays</h2>
     <p class="note">Two of the night's strongest picks (4%+ value), from different games, at the one bookie with the best combined price. Stakes sized to each slip's edge (0.2u–2u, as on the sheet), on top of the singles.</p>
     <div class="scroll"><table>
       <thead><tr><th>Season</th><th class="r">Slips</th><th class="r">W-L</th><th class="r">Units</th><th class="r">ROI</th></tr></thead>
@@ -119,7 +119,7 @@
 
   <div class="grid2">
     <section class="card">
-      <h2>Month by month</h2>
+      <h2>Month by Month</h2>
       <p class="note">Every season. Red months were losing months.</p>
       <div class="scroll"><table>
         <thead><tr><th>Month</th><th class="r">Picks</th><th class="r">W-L</th><th class="r">Units</th><th class="r">ROI</th></tr></thead>
@@ -127,7 +127,7 @@
       </table></div>
     </section>
     <section class="card" id="mkt-card">
-      <h2>By market</h2>
+      <h2>By Market</h2>
       <p class="note">Both seasons combined.</p>
       <div class="scroll"><table>
         <thead><tr><th>Market</th><th class="r">Picks</th><th class="r">W-L</th><th class="r">Units</th><th class="r">ROI</th></tr></thead>
@@ -137,30 +137,30 @@
   </div>
 
   <section class="how" id="how-nba">
-    <h2>How the NBA test works</h2>
+    <h2>How the NBA Test Works</h2>
     <ul>
-      <li><b>No peeking at the future.</b> The projection model for each season was trained only on seasons before it, then went through that season game by game.</li>
-      <li><b>Real prices.</b> Every price is a real US bookmaker line recorded 1 hour before tip-off. We take the best price on offer, the same way the live bot does.</li>
-      <li><b>Same rules as today.</b> The bet only counts if the price beats the fair line of the other bookmakers by 2% or more (4% for assists and PRA) and the model agrees. Steals, rebound overs and PRA overs are skipped (the backtest showed bookies overprice those overs). Stakes are sized to the edge, with the same adjustments the live bot makes.</li>
-      <li><b>Value parlays.</b> 2 legs from different games, each one of the night's strongest picks (4%+ value), priced at one bookie that has both legs. Stakes are 0.2u–2u, sized to the slip's edge.</li>
-      <li><b>Graded from the official box score.</b> Win rate is around 50% because most picks are priced around 2.10 (+110). That's where the profit comes from.</li>
-      <li><b>2024-25 is the tougher test.</b> The model never trained on it, and most of today's rules were set on 2025-26. One later tweak, skipping rebound and PRA overs, was checked on both seasons and kept because it held up in each. That makes both seasons slightly flattering, so expect live results to come in a bit lower.</li>
+      <li><b>No Peeking at the Future.</b> The projection model for each season was trained only on seasons before it, then went through that season game by game.</li>
+      <li><b>Real Prices.</b> Every price is a real US bookmaker line recorded 1 hour before tip-off. We take the best price on offer, the same way the live bot does.</li>
+      <li><b>Same Rules as Today.</b> The bet only counts if the price beats the fair line of the other bookmakers by 2% or more (4% for assists and PRA) and the model agrees. Steals, rebound overs and PRA overs are skipped (the backtest showed bookies overprice those overs). Stakes are sized to the edge, with the same adjustments the live bot makes.</li>
+      <li><b>Value Parlays.</b> 2 legs from different games, each one of the night's strongest picks (4%+ value), priced at one bookie that has both legs. Stakes are 0.2u–2u, sized to the slip's edge.</li>
+      <li><b>Graded From the Official Box Score.</b> Win rate is around 50% because most picks are priced around 2.10 (+110). That's where the profit comes from.</li>
+      <li><b>2024-25 Is the Tougher Test.</b> The model never trained on it, and most of today's rules were set on 2025-26. One later tweak, skipping rebound and PRA overs, was checked on both seasons and kept because it held up in each. That makes both seasons slightly flattering, so expect live results to come in a bit lower.</li>
     </ul>
   </section>
   <section class="how" id="how-nfl" hidden>
-    <h2>How the NFL test works</h2>
+    <h2>How the NFL Test Works</h2>
     <ul>
-      <li><b>Real prices.</b> Every price is a real US bookmaker player-prop line from before kick-off. We take the best price on offer.</li>
-      <li><b>The rule.</b> Unders on yardage and volume props (receptions, receiving and rushing yards, rush attempts, completions, tackles and more) where one bookie's price beats the other bookies' fair line by 2%+, one pick per player. Overs, touchdown markets and interceptions lost money in testing, so they're never picked.</li>
-      <li><b>No peeking at the future.</b> The projection model for each season was trained only on seasons before it.</li>
-      <li><b>QB changes.</b> Every pick is a flat 1 unit, except when a team starts a different quarterback from its last game: picks on that team get 1.5 units. That held up in all three seasons.</li>
-      <li><b>Graded from the official stats.</b></li>
-      <li><b>2023-24 is the tougher test.</b> Today's rules were built on later seasons, and the bot never saw 2023 until this test. It still made a profit.</li>
+      <li><b>Real Prices.</b> Every price is a real US bookmaker player-prop line from before kick-off. We take the best price on offer.</li>
+      <li><b>The Rule.</b> Unders on yardage and volume props (receptions, receiving and rushing yards, rush attempts, completions, tackles and more) where one bookie's price beats the other bookies' fair line by 2%+, one pick per player. Overs, touchdown markets and interceptions lost money in testing, so they're never picked.</li>
+      <li><b>No Peeking at the Future.</b> The projection model for each season was trained only on seasons before it.</li>
+      <li><b>QB Changes.</b> Every pick is a flat 1 unit, except when a team starts a different quarterback from its last game: picks on that team get 1.5 units. That held up in all three seasons.</li>
+      <li><b>Graded From the Official Stats.</b></li>
+      <li><b>2023-24 Is the Tougher Test.</b> Today's rules were built on later seasons, and the bot never saw 2023 until this test. It still made a profit.</li>
     </ul>
   </section>
 
   <section class="how">
-    <h2>What a backtest can't tell you</h2>
+    <h2>What a Backtest Can't Tell You</h2>
     <ul>
       <li>Bookmakers limit winning accounts and lines move fast. Not every price here would have been available to everyone at the same size.</li>
       <li>Past results, simulated or real, don't guarantee future ones. Expect losing weeks and losing months.</li>
@@ -233,7 +233,7 @@ function render(sport) {
   par.forEach(p => { tot.n += p.n; tot.w += p.w; tot.l += p.l; tot.units += p.units; tot.staked += p.staked; });
   const pu = par.reduce((a, p) => a + p.units, 0), su = seasons.reduce((a, s) => a + s[key].units, 0);
   $("t-profit").textContent = fmtU(tot.units);
-  $("t-profit-k").textContent = `Profit (${seasons.length} seasons)`; $("t-profit").className = "v " + cls(tot.units);
+  $("t-profit-k").textContent = `Profit (${seasons.length} Seasons)`; $("t-profit").className = "v " + cls(tot.units);
   $("t-n").textContent = tot.n.toLocaleString();
   $("t-roi").textContent = fmtP(tot.units / tot.staked); $("t-roi").className = "v " + cls(tot.units);
   $("t-rec").textContent = `${tot.w}-${tot.l}`;
@@ -248,8 +248,8 @@ function render(sport) {
     return `<section class="card"><div class="h2row"><h2>${sport.toUpperCase()} ${s.season}</h2>${tag}</div>
       <div class="stats"><div><span>Profit</span><b class="${cls(x.units)}">${fmtU(x.units)}</b></div>
       <div><span>ROI</span><b class="${cls(x.roi)}">${fmtP(x.roi)}</b></div>
-      <div><span>${pp ? "Picks + slips" : "Picks"}</span><b>${x.n.toLocaleString()}</b></div>
-      <div><span>Beat close</span><b>${Math.round(s.beat_close * 100)}%</b></div></div>
+      <div><span>${pp ? "Picks + Slips" : "Picks"}</span><b>${x.n.toLocaleString()}</b></div>
+      <div><span>Beat Close</span><b>${Math.round(s.beat_close * 100)}%</b></div></div>
       ${pp ? `<p class="note" style="margin:0">Singles ${fmtU(s[key].units)} + parlays ${fmtU(pp.units)}. Chart shows singles.</p>` : ""}
       <div class="chart mini" id="c${i}"></div></section>`; }).join("");
   seasons.forEach((s, i) => chart($("c" + i), s.curve));
